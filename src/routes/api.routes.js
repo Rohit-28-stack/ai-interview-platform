@@ -1,13 +1,10 @@
 import {Router} from "express";
-
+import authRoutes from "./auth.routes.js";
+import questionRoutes from "./question.routes.js";
 const router =Router();
 
+router.use("/auth", authRoutes);
+router.use("/questions",questionRoutes);
 
-router.get("/",(req,res)=>{
-    res.json({
-        success:true,
-        message:"Welcome to API"
-    })
-})
 
 export default router;
