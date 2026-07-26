@@ -1,11 +1,12 @@
-import dotenv from "dotenv";
+
 import app from "./src/app.js";
 import connectDB from "./src/config/db.js";
 
-dotenv.config();
+
 
 const PORT = process.env.PORT || 5000;
-
+console.log("API KEY:", process.env.GEMINI_API_KEY);
+console.log("Length:", process.env.GEMINI_API_KEY?.length);
 connectDB()
 .then(() => {
     app.listen(PORT, () => {
