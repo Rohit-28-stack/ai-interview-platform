@@ -1,0 +1,89 @@
+src/
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── logo.svg
+│
+├── components/
+│   ├── common/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── Loader.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Card.jsx
+│   │   └── Modal.jsx
+│   │
+│   ├── auth/
+│   │   ├── LoginForm.jsx
+│   │   └── RegisterForm.jsx
+│   │
+│   ├── dashboard/
+│   │   ├── StatsCard.jsx
+│   │   ├── QuickActionCard.jsx
+│   │   └── RecentInterviewCard.jsx
+│   │
+│   ├── interview/
+│   │   ├── QuestionCard.jsx
+│   │   ├── AnswerBox.jsx
+│   │   ├── Timer.jsx
+│   │   └── ProgressBar.jsx
+│   │
+│   └── questions/
+│       ├── QuestionTable.jsx
+│       ├── QuestionFilter.jsx
+│       └── QuestionSearch.jsx
+│
+├── context/
+│   └── AuthContext.jsx
+│
+├── hooks/
+│   ├── useAuth.js
+│   └── useDebounce.js
+│
+├── layouts/
+│   └── MainLayout.jsx
+│
+├── pages/
+│   ├── auth/
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   │
+│   ├── dashboard/
+│   │   └── Dashboard.jsx
+│   │
+│   ├── interview/
+│   │   ├── StartInterview.jsx
+│   │   ├── Interview.jsx
+│   │   └── Report.jsx
+│   │
+│   ├── questions/
+│   │   └── Questions.jsx
+│   │
+│   ├── submissions/
+│   │   └── Submissions.jsx
+│   │
+│   ├── profile/
+│   │   └── Profile.jsx
+│   │
+│   └── NotFound.jsx
+│
+├── routes/
+│   └── AppRoutes.jsx
+│
+├── services/
+│   ├── api.js
+│   ├── auth.service.js
+│   ├── interview.service.js
+│   ├── question.service.js
+│   └── submission.service.js
+│
+├── utils/
+│   ├── constants.js
+│   ├── helpers.js
+│   └── formatDate.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
