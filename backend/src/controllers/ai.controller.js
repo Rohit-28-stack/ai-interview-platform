@@ -8,7 +8,6 @@ import {
 } from "../services/ai.service.js";
 
 
-
 export const generateQuestion = asyncHandler(async (req, res) => {
 
     const { topic, difficulty } = req.body;
@@ -37,9 +36,6 @@ export const generateQuestion = asyncHandler(async (req, res) => {
         )
     );
 });
-
-
-
 
 export const evaluateAnswer = asyncHandler(
     async (req, res) => {

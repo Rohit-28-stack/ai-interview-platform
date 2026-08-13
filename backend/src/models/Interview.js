@@ -18,6 +18,16 @@ const interviewSchema = new mongoose.Schema(
         enum:["Easy","Medium","Hard"],
         required:true
     },
+    currentQuestion:{
+        type :Number,
+        default:1
+
+    },
+    maxQuestions:{
+        type : Number,
+        default:3
+
+    },
 
     questions:[
         {
@@ -76,9 +86,8 @@ const interviewSchema = new mongoose.Schema(
     suggestions:{
         type:[String],
         default:[]
-    }
-}
-
+    },
+},
 },
 {
     timestamps:true

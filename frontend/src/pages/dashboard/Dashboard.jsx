@@ -12,6 +12,7 @@ function Dashboard() {
   totalInterviews: 0,
   averageScore: 0,
   totalQuestions: 0,
+  totalSubmissions:0,
   recentInterviews: [],
 });
 useEffect(() => {
@@ -57,7 +58,7 @@ useEffect(() => {
 
           <StatsCard
             title="Average Score"
-            value={dashboard.averageScore}
+            value={`${dashboard.averageScore}`}
             icon={<FaChartLine className="text-white text-xl" />}
             color="bg-green-500"
           />
@@ -71,7 +72,7 @@ useEffect(() => {
 
           <StatsCard
             title="Submissions"
-            value={dashboard.totalQuestions}
+            value={dashboard.totalSubmissions}
             icon={<FaFileAlt className="text-white text-xl" />}
             color="bg-orange-500"
           />

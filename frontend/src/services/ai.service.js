@@ -4,7 +4,6 @@ const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
 });
 
-
 export const generateInterviewQuestion = async (
     topic,
     difficulty
@@ -98,9 +97,11 @@ Topic: ${topic}
 Difficulty: ${difficulty}
 
 Rules:
+- Do NOT repeat any previous question.
 - Ask only one technical question.
 - No explanation.
 - No answer.
+- Return only the question.
 `;
 
     const response = await groq.chat.completions.create({
